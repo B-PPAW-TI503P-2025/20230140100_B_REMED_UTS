@@ -39,10 +39,10 @@ GET,/api/books/:id,Melihat detail buku berdasarkan ID
 B. Admin Mode
 Wajib menggunakan Header: x-user-role: admin
 
-Method,Endpoint,Body Payload (JSON),Deskripsi
-POST,/api/books,"{""title"": ""Judul"", ""author"": ""Penulis"", ""stock"": 10}",Menambah buku baru
-PUT,/api/books/:id,"{""stock"": 15}",Update data buku
-DELETE,/api/books/:id,-,Menghapus buku
+Method - Endpoint - Body Payload (JSON) - Deskripsi
+POST - /api/books - "{""title"": ""Judul"",""author"": ""Penulis"",""stock"": 10}" - Menambah buku baru
+PUT - /api/books/:id - "{""stock"": 15}" - Update data buku
+DELETE - /api/books/:id - (-) - Menghapus buku
 
 C. User Mode (Peminjaman)
 Wajib menggunakan Header:
@@ -50,8 +50,8 @@ Wajib menggunakan Header:
 x-user-role: user
 x-user-id: 001 (Ganti dengan ID user simulasi)
 
-Method,Endpoint,Body Payload (JSON),Deskripsi
-POST,/api/borrow,"{""bookId"": 1, ""latitude"": -7.795, ""longitude"": 110.369}",Meminjam buku & catat lokasi
+Method - Endpoint - Body Payload (JSON) - Deskripsi
+POST - /api/borrow - "{""bookId"": 1, ""latitude"": -7.795, ""longitude"": 110.369}" - Meminjam buku & catat lokasi
 
 STRUKTUR DATABASE
 ![alt text](image.png)
